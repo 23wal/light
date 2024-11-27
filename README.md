@@ -2,7 +2,11 @@
 
 Docs about our Light-Setup
 
-## Software 
+## diy
+
+- [dmx2vga](/light/dmx2vga/)
+
+## Software
 
 [QLC+](https://www.qlcplus.org/)
 
@@ -41,4 +45,4 @@ used mode: `d501`
 | **CH8** | X axis moving     | 000 - 127   | Manual position                      |
 |         |                   | 128 - 255   | Horizontal moving speed              |
 | **CH9** | Y axis moving     | 000 - 127   | Manual position                      |
-|      
+|
