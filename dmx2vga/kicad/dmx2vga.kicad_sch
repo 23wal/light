@@ -2634,8 +2634,44 @@
 		(uuid "98b33d32-055a-474b-84dc-5f276406769e")
 	)
 	(no_connect
+		(at 168.91 107.95)
+		(uuid "4246a954-0924-4b6e-9d70-465728fbd711")
+	)
+	(no_connect
+		(at 168.91 105.41)
+		(uuid "46b359b8-0786-4b6b-a122-647cfaddd012")
+	)
+	(no_connect
+		(at 168.91 102.87)
+		(uuid "4ece40ab-ae51-4f38-9e8f-6f7f6aaa8e8b")
+	)
+	(no_connect
+		(at 143.51 130.81)
+		(uuid "4f84bd48-ea0a-4c1a-994f-fde3a30ab064")
+	)
+	(no_connect
+		(at 168.91 123.19)
+		(uuid "524e70fa-f168-4481-8439-37d6ce8f468a")
+	)
+	(no_connect
+		(at 168.91 110.49)
+		(uuid "8ce1e78f-70e3-4169-ac0a-91feea43ce14")
+	)
+	(no_connect
+		(at 168.91 115.57)
+		(uuid "944a756f-f32a-4e41-9e28-ef721d2a3c40")
+	)
+	(no_connect
+		(at 168.91 118.11)
+		(uuid "94beab30-c17d-4d12-9f05-745f084329fd")
+	)
+	(no_connect
 		(at 157.48 62.23)
 		(uuid "c9cc6450-ec07-41a9-ab40-1ae2df3f14f4")
+	)
+	(no_connect
+		(at 168.91 133.35)
+		(uuid "ff23bb6b-982e-4b1a-ae1b-350e1117a7d9")
 	)
 	(wire
 		(pts
@@ -2804,17 +2840,6 @@
 			(justify left top)
 		)
 		(uuid "c3156dc4-38b7-4ba6-a381-0553439c40c2")
-	)
-	(label "https:{slash}{slash}www.instructables.com{slash}Build-Your-Own-DMX-Fixture-Arduino{slash}"
-		(at 208.28 16.51 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e79e730c-fdb6-49b6-a916-6ee649e7d4f1")
 	)
 	(global_label "GPIO-4"
 		(shape input)
@@ -3436,7 +3461,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
 			(at 217.17 142.24 0)
 			(effects
 				(font
@@ -4044,7 +4069,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm"
 			(at 218.44 122.936 0)
 			(effects
 				(font
@@ -4190,7 +4215,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 203.962 133.35 90)
 			(effects
 				(font
@@ -4327,7 +4352,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 210.312 151.13 90)
 			(effects
 				(font
@@ -4395,7 +4420,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_XLR_Neutrik_NC3MAAV_Vertical"
 			(at 262.89 62.23 0)
 			(effects
 				(font
@@ -4467,7 +4492,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 214.63 85.09 0)
 			(effects
 				(font
@@ -5020,7 +5045,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_XLR_Neutrik_NC3FAAV2_Vertical"
 			(at 262.89 85.09 0)
 			(effects
 				(font
@@ -5093,7 +5118,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 207.518 120.65 90)
 			(effects
 				(font
@@ -5161,7 +5186,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical"
 			(at 162.56 59.69 0)
 			(effects
 				(font
@@ -5579,7 +5604,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 228.092 133.35 90)
 			(effects
 				(font
