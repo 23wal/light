@@ -2,7 +2,13 @@
 
 Docs about our Light-Setup
 
-## Software 
+## dmx2vga
+
+A custom pcb to change color of vga-monitors with dmx
+
+[BOM](/light/dmx2vga.html)
+
+## Software
 
 [QLC+](https://www.qlcplus.org/)
 
@@ -41,4 +47,4 @@ used mode: `d501`
 | **CH8** | X axis moving     | 000 - 127   | Manual position                      |
 |         |                   | 128 - 255   | Horizontal moving speed              |
 | **CH9** | Y axis moving     | 000 - 127   | Manual position                      |
-|      
+|
