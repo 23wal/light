@@ -70,8 +70,8 @@ jobs:
       - run: |
           apt update -qq
           apt install -y curl
-          curl -O --retry 999 --retry-max-time 0 -C - https://raw.githubusercontent.com/actions-for-kicad/generate-kicad-files/refs/heads/main/export_files.sh
-          bash export_files.sh "$SCHEMATICPATH" "$TYPE"
+          curl -O --retry 999 --retry-max-time 0 -C - https://raw.githubusercontent.com/actions-for-kicad/generate-kicad-files/refs/heads/main/export-files.sh
+          bash export-files.sh "$SCHEMATICPATH" --type "$TYPE"
           ls -la
 
       - uses: actions/upload-artifact@v4
