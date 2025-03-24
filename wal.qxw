@@ -566,28 +566,28 @@
   </Function>
   <Function ID="44" Type="Scene" Name="TMH - Strobo 50%" Path="Moving Head">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,84,1,0,2,206,3,250</FixtureVal>
-   <FixtureVal ID="6">0,84,1,0,2,206,3,250</FixtureVal>
+   <FixtureVal ID="1">6,128</FixtureVal>
+   <FixtureVal ID="6">6,128</FixtureVal>
   </Function>
   <Function ID="45" Type="Scene" Name="TMH - Strobo 25%" Path="Moving Head">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,84,1,0,2,206,3,250</FixtureVal>
-   <FixtureVal ID="6">0,84,1,0,2,206,3,250</FixtureVal>
+   <FixtureVal ID="1">6,64</FixtureVal>
+   <FixtureVal ID="6">6,64</FixtureVal>
   </Function>
   <Function ID="46" Type="Scene" Name="TMH - Strobo 75%" Path="Moving Head">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,84,1,0,2,206,3,250</FixtureVal>
-   <FixtureVal ID="6">0,84,1,0,2,206,3,250</FixtureVal>
+   <FixtureVal ID="1">6,192</FixtureVal>
+   <FixtureVal ID="6">6,192</FixtureVal>
   </Function>
   <Function ID="47" Type="Scene" Name="TMH - Strobo 100%" Path="Moving Head">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,84,1,0,2,206,3,250</FixtureVal>
-   <FixtureVal ID="6">0,84,1,0,2,206,3,250</FixtureVal>
+   <FixtureVal ID="1">6,255</FixtureVal>
+   <FixtureVal ID="6">6,255</FixtureVal>
   </Function>
   <Function ID="48" Type="Scene" Name="TMH - Strobo 0%" Path="Moving Head">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,84,1,0,2,206,3,250</FixtureVal>
-   <FixtureVal ID="6">0,84,1,0,2,206,3,250</FixtureVal>
+   <FixtureVal ID="1">6,0</FixtureVal>
+   <FixtureVal ID="6">6,0</FixtureVal>
   </Function>
   <Function ID="49" Type="Scene" Name="fullred" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
