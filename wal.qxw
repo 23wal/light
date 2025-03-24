@@ -3,7 +3,7 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.13.1</Version>
+  <Version>4.14.1</Version>
   <Author></Author>
  </Creator>
  <Engine>
@@ -251,8 +251,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
-   <MonoColor>4289331455</MonoColor>
-   <EndColor>4278523110</EndColor>
+   <Color Index="0">4289331455</Color>
+   <Color Index="1">4278523110</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="noisePercentage" Value="High"/>
@@ -394,13 +397,16 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Waves</Algorithm>
-   <MonoColor>4294901887</MonoColor>
-   <EndColor>4279307883</EndColor>
+   <Color Index="0">4294901887</Color>
+   <Color Index="1">4279307883</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="orientation" Value="Horizontal"/>
    <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="orientation" Value="Horizontal"/>
   </Function>
   <Function ID="33" Type="Scene" Name="TMH - Hellblau leuchtend" Path="Moving Head">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -622,7 +628,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Waves</Algorithm>
-   <MonoColor>4292214788</MonoColor>
+   <Color Index="0">4292214788</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="tailfade" Value="Yes"/>
@@ -633,8 +643,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <EndColor>4294967295</EndColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4294967295</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>4</FixtureGroup>
   </Function>
@@ -643,8 +656,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Fill Unfill From Center</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <EndColor>4278190080</EndColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>4</FixtureGroup>
   </Function>
@@ -653,7 +669,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
-   <MonoColor>4294967295</MonoColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>4</FixtureGroup>
    <Property Name="noisePercentage" Value="Low"/>
@@ -699,7 +719,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
-   <MonoColor>4294967295</MonoColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>4</FixtureGroup>
    <Property Name="noisePercentage" Value="High"/>
@@ -709,7 +733,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
-   <MonoColor>4294967295</MonoColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>1</FixtureGroup>
    <Property Name="noisePercentage" Value="Medium"/>
@@ -719,7 +747,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
-   <MonoColor>4294967295</MonoColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="noisePercentage" Value="High"/>
@@ -752,8 +784,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <EndColor>4294967295</EndColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4294967295</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>5</FixtureGroup>
   </Function>
@@ -762,8 +797,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <EndColor>4294967295</EndColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4294967295</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>5</FixtureGroup>
   </Function>
@@ -772,7 +810,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
-   <MonoColor>4294967295</MonoColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>5</FixtureGroup>
    <Property Name="noisePercentage" Value="High"/>
@@ -782,8 +824,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <EndColor>4278190080</EndColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>5</FixtureGroup>
    <Property Name="noisePercentage" Value="Low"/>
@@ -793,8 +838,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <EndColor>4294967295</EndColor>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4294967295</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>1</FixtureGroup>
   </Function>
@@ -803,8 +851,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
-   <MonoColor>4278222631</MonoColor>
-   <EndColor>4280746122</EndColor>
+   <Color Index="0">4278222631</Color>
+   <Color Index="1">4280746122</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
   </Function>
@@ -820,8 +871,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
-   <MonoColor>4292523264</MonoColor>
-   <EndColor>4284285043</EndColor>
+   <Color Index="0">4292523264</Color>
+   <Color Index="1">4284285043</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
   </Function>
@@ -866,7 +920,11 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes</Algorithm>
-   <MonoColor>4280485631</MonoColor>
+   <Color Index="0">4280485631</Color>
+   <Color Index="1">4278190080</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
   </Function>
