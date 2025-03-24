@@ -1009,6 +1009,19 @@
    <Step Number="6" FadeIn="0" Hold="500" FadeOut="0">87</Step>
    <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">88</Step>
   </Function>
+  <Function ID="90" Type="RGBMatrix" Name="Animation" Path="Moving Head">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4294963251</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+  </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -3021,7 +3034,7 @@
        <Font>Default</Font>
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="160">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="1">7</Channel>
        <Channel Fixture="6">7</Channel>
       </Level>
@@ -3129,7 +3142,7 @@
        <Font>Default</Font>
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="200">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="1">6</Channel>
        <Channel Fixture="6">6</Channel>
       </Level>
@@ -4916,6 +4929,18 @@
      <Function FadeIn="0" FadeOut="0" Duration="6">77</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">84</Function>
     </SpeedDial>
+    <Matrix Caption="Animation" ID="25" Page="1">
+     <WindowState Visible="False" X="570" Y="335" Width="160" Height="120"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="90" InstantApply="true"/>
+     <Visibility>29</Visibility>
+    </Matrix>
    </Frame>
   </Frame>
   <Properties>
