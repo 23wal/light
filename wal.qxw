@@ -424,8 +424,8 @@
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="33" Type="Scene" Name="TMH - Hellblau leuchtend" Path="Moving Head">
@@ -800,7 +800,7 @@
    <FixtureVal ID="6">0,0,1,0,2,0,3,0</FixtureVal>
   </Function>
   <Function ID="70" Type="RGBMatrix" Name="Even/Odd" Path="PAR - Varytec">
-   <Speed FadeIn="0" FadeOut="0" Duration="306"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="309"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
@@ -813,7 +813,7 @@
    <FixtureGroup>5</FixtureGroup>
   </Function>
   <Function ID="71" Type="RGBMatrix" Name="Stripes" Path="PAR - Varytec">
-   <Speed FadeIn="0" FadeOut="0" Duration="306"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="309"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes</Algorithm>
@@ -826,7 +826,7 @@
    <FixtureGroup>5</FixtureGroup>
   </Function>
   <Function ID="72" Type="RGBMatrix" Name="Noise High" Path="PAR - Varytec">
-   <Speed FadeIn="0" FadeOut="0" Duration="306"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="309"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
@@ -840,7 +840,7 @@
    <Property Name="noisePercentage" Value="High"/>
   </Function>
   <Function ID="73" Type="RGBMatrix" Name="Noise Low" Path="PAR - Varytec">
-   <Speed FadeIn="0" FadeOut="0" Duration="306"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="309"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
@@ -1016,7 +1016,7 @@
    <FixtureVal ID="11">0,0,3,0</FixtureVal>
   </Function>
   <Function ID="89" Type="Chaser" Name="1312 - vary">
-   <Speed FadeIn="0" FadeOut="0" Duration="306"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="309"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1029,18 +1029,31 @@
    <Step Number="6" FadeIn="0" Hold="500" FadeOut="0">87</Step>
    <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">88</Step>
   </Function>
-  <Function ID="90" Type="RGBMatrix" Name="Animation" Path="Moving Head">
+  <Function ID="90" Type="RGBMatrix" Name="Animation RGB" Path="Moving Head">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes</Algorithm>
-   <Color Index="0">4294901760</Color>
-   <Color Index="1">4294963251</Color>
+   <Color Index="0">4278452281</Color>
+   <Color Index="1">4278234789</Color>
    <Color Index="2">4278190080</Color>
    <Color Index="3">4278190080</Color>
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
+  </Function>
+  <Function ID="91" Type="RGBMatrix" Name="Animation RGB" Path="PAR - Varytec">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Fill From Center</Algorithm>
+   <Color Index="0">4278194310</Color>
+   <Color Index="1">4278224514</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>5</FixtureGroup>
   </Function>
   <Function ID="92" Type="Scene" Name="on" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1053,6 +1066,19 @@
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0" Note="ON" Values="1">13:3,255</Step>
    <Step Number="1" FadeIn="0" Hold="5000" FadeOut="0" Note="OFF" Values="1"/>
+  </Function>
+  <Function ID="94" Type="RGBMatrix" Name="Animation Dimmer" Path="PAR - Varytec">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Even/Odd</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <Color Index="1">4294967295</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>5</FixtureGroup>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -3048,7 +3074,7 @@
       </Appearance>
       <Input Universe="0" Channel="7"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="1">5</Channel>
        <Channel Fixture="6">5</Channel>
       </Level>
@@ -3102,7 +3128,7 @@
        <Font>Default</Font>
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="1">9</Channel>
        <Channel Fixture="6">9</Channel>
       </Level>
@@ -3224,7 +3250,7 @@
       </Appearance>
       <Input Universe="0" Channel="7"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="1">0</Channel>
        <Channel Fixture="6">0</Channel>
       </Level>
@@ -3243,7 +3269,7 @@
       </Appearance>
       <Input Universe="0" Channel="4103"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="56">
        <Channel Fixture="1">2</Channel>
        <Channel Fixture="6">2</Channel>
       </Level>
@@ -4725,7 +4751,7 @@
       </Appearance>
       <Input Universe="0" Channel="7"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="8">0</Channel>
        <Channel Fixture="9">0</Channel>
        <Channel Fixture="10">0</Channel>
@@ -4788,7 +4814,7 @@
       </Appearance>
       <Input Universe="0" Channel="12295"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="8">3</Channel>
        <Channel Fixture="9">3</Channel>
        <Channel Fixture="10">3</Channel>
@@ -4915,11 +4941,13 @@
      <Tap>
       <Input Universe="0" Channel="262324"/>
      </Tap>
-     <Time>306</Time>
+     <Time>309</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">71</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">73</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">72</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">70</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">91</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">94</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">89</Function>
     </SpeedDial>
     <SpeedDial Caption="Duration" ID="14" Page="1">
@@ -4972,6 +5000,30 @@
      </Appearance>
      <Function ID="90" InstantApply="true"/>
      <Visibility>29</Visibility>
+    </Matrix>
+    <Matrix Caption="RGB" ID="26" Page="4">
+     <WindowState Visible="False" X="555" Y="330" Width="160" Height="120"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="91" InstantApply="true"/>
+     <Visibility>31</Visibility>
+    </Matrix>
+    <Matrix Caption="Dimmer" ID="27" Page="4">
+     <WindowState Visible="False" X="555" Y="455" Width="160" Height="120"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="94" InstantApply="true"/>
+     <Visibility>7</Visibility>
     </Matrix>
    </Frame>
   </Frame>
