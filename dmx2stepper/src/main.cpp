@@ -1,32 +1,33 @@
-#include <AccelStepper.h>
 #include <Arduino.h>
 #include <DMXSerial.h>
+#include <Stepper.h>
 
-#define MAX_SPEED 200
+const int STEPS_PER_REV = 2048; // Adjust based on your motor
+const int MIN_POS = -1000;      // Minimum mapped stepper position
+const int MAX_POS = 1000;       // Maximum mapped stepper position
+const int MIN_SPEED = 1;        // Min step delay in ms (higher is slower)
+const int MAX_SPEED = 10;       // Max step delay in ms (lower is faster)
 #define TYPE_DIRECT 1
 #define TYPE_SPEED 2
-const int address = 0;
-int dmx_value = 0;
-bool rotate = true;
 
-AccelStepper stepper;
+int currentPosition = 0; // Stores the stepper's current position
+
+Stepper stepper(STEPS_PER_REV, 2, 4, 3, 5); // Define stepper pins
 
 typedef struct {
     int type;
     int address;
     int value;
     int oldValue;
-} dataNode; //  creates a struct type dataNode
+} dataNode;
 
-dataNode functions[2] = {{TYPE_DIRECT, 0, 0, -1}, {TYPE_SPEED, 1, 0, -1}};
+dataNode functions[2] = {{TYPE_DIRECT, 0, 0, 0}, {TYPE_SPEED, 1, 0, 0}};
 
-// direct: 0: rotate nonstop; 1-255: move to position
-// speed: 0-255: speed
+bool rotate = false;
+
 void setup() {
     DMXSerial.init(DMXReceiver);
-    stepper.setMaxSpeed(MAX_SPEED);
-    stepper.setAcceleration(100);
-    stepper.setSpeed(0);
+    stepper.setSpeed(MAX_SPEED); // Default speed (RPM, not step delay)
 }
 
 void loop() {
@@ -35,29 +36,28 @@ void loop() {
         if (node.value == node.oldValue) {
             continue;
         }
-
         switch (node.type) {
         case TYPE_DIRECT:
             if (node.value == 0) {
+                // Enable continuous rotation
                 rotate = true;
             } else {
                 rotate = false;
-                stepper.moveTo(map(node.value, 1, 255, -500, 500));
+                int targetPosition = map(node.value, 1, 255, MIN_POS, MAX_POS);
+                stepper.step(targetPosition - currentPosition);
+                currentPosition = targetPosition; // Update position
             }
             break;
         case TYPE_SPEED:
-            stepper.setSpeed(map(node.value, 0, 255, 0, MAX_SPEED));
+            stepper.setSpeed(map(node.value, 0, 255, MIN_SPEED, MAX_SPEED));
             break;
         default:
             break;
         }
-        node.oldValue = node.value;
-    }
 
-    // Ensure movement continues:
-    if (rotate) {
-        stepper.runSpeed(); // Non-blocking continuous rotation
-    } else {
-        stepper.run(); // If speed is 0, return to position mode
+        node.oldValue = node.value;
+        // Continuous rotation mode
+        if (rotate) {        // If "direct" channel is 0
+            stepper.step(1); // Move continuously
+        }
     }
-}
