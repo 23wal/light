@@ -34,7 +34,7 @@ jobs:
       PCBPATH: "dmx2vga/kicad/dmx2vga.kicad_pcb"
       ARGS: "--layer-view F"
     container:
-      image: docker.io/kicad/kicad:8.0
+      image: docker.io/kicad/kicad:9.0
       options: --user root
     steps:
       - name: Checkout repository
@@ -62,7 +62,7 @@ jobs:
       SCHEMATICPATH: "dmx2vga/kicad/dmx2vga.kicad_sch"
       TYPE: "schematic_svg"
     container:
-      image: docker.io/kicad/kicad:8.0
+      image: docker.io/kicad/kicad:9.0
       options: --user root
     steps:
       - name: Checkout repository
