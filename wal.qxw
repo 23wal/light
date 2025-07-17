@@ -3,18 +3,20 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.14.2 GIT</Version>
+  <Version>4.14.1</Version>
   <Author></Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="input" Line="1" Profile="Akai APC20">
+    <Input Plugin="MIDI" UID="Launch Control MIDI 1" Line="1" Profile="Novation Launch Control">
      <PluginParameters midichannel="16"/>
     </Input>
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
-    <Feedback Plugin="MIDI" UID="input" Line="1">
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: BG00QGH0)" Line="0">
+     <PluginParameters UniverseChannels="509"/>
+    </Output>
+    <Feedback Plugin="MIDI" UID="Launch Control MIDI 1" Line="1">
      <PluginParameters midichannel="16"/>
     </Feedback>
    </Universe>
@@ -31,6 +33,46 @@
    <Universe>0</Universe>
    <Address>500</Address>
    <Channels>9</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>hyulights</Manufacturer>
+   <Model>hyu-7</Model>
+   <Mode>10 Channel</Mode>
+   <ID>1</ID>
+   <Name>hyu-7 #1</Name>
+   <Universe>0</Universe>
+   <Address>39</Address>
+   <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>hyulights</Manufacturer>
+   <Model>hyu-7</Model>
+   <Mode>10 Channel</Mode>
+   <ID>2</ID>
+   <Name>hyu-7 #2</Name>
+   <Universe>0</Universe>
+   <Address>49</Address>
+   <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>hyulights</Manufacturer>
+   <Model>hyu-7</Model>
+   <Mode>10 Channel</Mode>
+   <ID>3</ID>
+   <Name>hyu-7 #3</Name>
+   <Universe>0</Universe>
+   <Address>59</Address>
+   <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>hyulights</Manufacturer>
+   <Model>hyu-7</Model>
+   <Mode>10 Channel</Mode>
+   <ID>4</ID>
+   <Name>hyu-7 #4</Name>
+   <Universe>0</Universe>
+   <Address>69</Address>
+   <Channels>10</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Stairville</Manufacturer>
@@ -152,6 +194,14 @@
    <Address>174</Address>
    <Channels>29</Channels>
   </Fixture>
+  <FixtureGroup ID="0">
+   <Name>par-ali</Name>
+   <Size X="4" Y="1"/>
+   <Head X="0" Y="0" Fixture="1">0</Head>
+   <Head X="1" Y="0" Fixture="2">0</Head>
+   <Head X="2" Y="0" Fixture="3">0</Head>
+   <Head X="3" Y="0" Fixture="4">0</Head>
+  </FixtureGroup>
   <FixtureGroup ID="2">
    <Name>laser</Name>
    <Size X="1" Y="1"/>
@@ -231,6 +281,10 @@
   <Function ID="11" Type="Scene" Name="Wookie series - Mode - DMX" Path="Laser">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,192</FixtureVal>
+  </Function>
+  <Function ID="12" Type="Scene" Name="Laser off" Path="Laser">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0</FixtureVal>
   </Function>
   <Function ID="13" Type="Scene" Name="Moving Circle" Path="Laser">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -368,14 +422,14 @@
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fill From Center</Algorithm>
+   <Algorithm Type="Script">Even/Odd</Algorithm>
    <Color Index="0">4278194310</Color>
    <Color Index="1">4278224514</Color>
    <Color Index="2">4278190080</Color>
    <Color Index="3">4278190080</Color>
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
-   <FixtureGroup>5</FixtureGroup>
+   <FixtureGroup>0</FixtureGroup>
   </Function>
   <Function ID="94" Type="RGBMatrix" Name="Animation Dimmer" Path="PAR - Varytec">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -388,7 +442,7 @@
    <Color Index="3">4278190080</Color>
    <Color Index="4">4278190080</Color>
    <ControlMode>Dimmer</ControlMode>
-   <FixtureGroup>5</FixtureGroup>
+   <FixtureGroup>0</FixtureGroup>
   </Function>
   <Function ID="95" Type="Scene" Name="Motor - Links" Path="Motor">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -428,7 +482,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1544"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3156"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -568,7 +622,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1544"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3156"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -604,7 +658,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1544"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3156"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -818,14 +872,20 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="0" Width="1005" Height="640"/>
+    <WindowState Visible="False" X="0" Y="0" Width="1590" Height="895"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="3" CurrentPage="0"/>
+    <Multipage PagesNum="3" CurrentPage="2"/>
+    <Next>
+     <Input Universe="0" Channel="32885"/>
+    </Next>
+    <Previous>
+     <Input Universe="0" Channel="32884"/>
+    </Previous>
     <Shortcut Page="0" Name="1: Vary"/>
     <Shortcut Page="1" Name="2: Robe"/>
     <Shortcut Page="2" Name="3: Laser"/>
@@ -1409,7 +1469,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="0" Y="340" Width="555" Height="200"/>
+     <WindowState Visible="False" X="0" Y="340" Width="495" Height="200"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1425,9 +1485,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="0" Channel="7"/>
+      <Input Universe="0" Channel="32809"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="255">
+       <Channel Fixture="1">0</Channel>
+       <Channel Fixture="2">0</Channel>
+       <Channel Fixture="3">0</Channel>
+       <Channel Fixture="4">0</Channel>
        <Channel Fixture="8">0</Channel>
        <Channel Fixture="9">0</Channel>
        <Channel Fixture="10">0</Channel>
@@ -1446,9 +1510,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="0" Channel="4103"/>
+      <Input Universe="0" Channel="32810"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="1">1</Channel>
+       <Channel Fixture="2">1</Channel>
+       <Channel Fixture="3">1</Channel>
+       <Channel Fixture="4">1</Channel>
        <Channel Fixture="8">1</Channel>
        <Channel Fixture="9">1</Channel>
        <Channel Fixture="10">1</Channel>
@@ -1467,9 +1535,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="0" Channel="8199"/>
+      <Input Universe="0" Channel="32811"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="1">2</Channel>
+       <Channel Fixture="2">2</Channel>
+       <Channel Fixture="3">2</Channel>
+       <Channel Fixture="4">2</Channel>
        <Channel Fixture="8">2</Channel>
        <Channel Fixture="9">2</Channel>
        <Channel Fixture="10">2</Channel>
@@ -1488,9 +1560,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="0" Channel="12295"/>
+      <Input Universe="0" Channel="32812"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="1">3</Channel>
+       <Channel Fixture="2">3</Channel>
+       <Channel Fixture="3">3</Channel>
+       <Channel Fixture="4">3</Channel>
        <Channel Fixture="8">3</Channel>
        <Channel Fixture="9">3</Channel>
        <Channel Fixture="10">3</Channel>
@@ -1509,9 +1585,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="0" Channel="16391"/>
+      <Input Universe="0" Channel="32813"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="1">4</Channel>
+       <Channel Fixture="2">4</Channel>
+       <Channel Fixture="3">4</Channel>
+       <Channel Fixture="4">4</Channel>
        <Channel Fixture="8">4</Channel>
        <Channel Fixture="9">4</Channel>
        <Channel Fixture="10">4</Channel>
@@ -1530,9 +1610,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="0" Channel="20487"/>
+      <Input Universe="0" Channel="32814"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="1">5</Channel>
+       <Channel Fixture="2">5</Channel>
+       <Channel Fixture="3">5</Channel>
+       <Channel Fixture="4">5</Channel>
        <Channel Fixture="8">5</Channel>
        <Channel Fixture="9">5</Channel>
        <Channel Fixture="10">5</Channel>
@@ -1551,9 +1635,13 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="0" Channel="24583"/>
+      <Input Universe="0" Channel="32815"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="1">6</Channel>
+       <Channel Fixture="2">6</Channel>
+       <Channel Fixture="3">6</Channel>
+       <Channel Fixture="4">6</Channel>
        <Channel Fixture="8">6</Channel>
        <Channel Fixture="9">6</Channel>
        <Channel Fixture="10">6</Channel>
@@ -1572,31 +1660,17 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Input Universe="0" Channel="28679"/>
+      <Input Universe="0" Channel="32816"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="1">7</Channel>
+       <Channel Fixture="2">7</Channel>
+       <Channel Fixture="3">7</Channel>
+       <Channel Fixture="4">7</Channel>
        <Channel Fixture="8">8</Channel>
        <Channel Fixture="9">8</Channel>
        <Channel Fixture="10">8</Channel>
        <Channel Fixture="11">8</Channel>
-      </Level>
-      <Playback>
-       <Function>4294967295</Function>
-      </Playback>
-     </Slider>
-     <Slider Caption="Fog" ID="282" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="480" Y="0" Width="60" Height="200"/>
-      <Appearance>
-       <FrameStyle>Sunken</FrameStyle>
-       <ForegroundColor>4278190080</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Input Universe="0" Channel="14"/>
-      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
        <Function>4294967295</Function>
@@ -1625,7 +1699,7 @@
      <Visibility>124</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
      <Tap>
-      <Input Universe="0" Channel="262324"/>
+      <Input Universe="0" Channel="32905"/>
      </Tap>
      <Time>0</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">71</Function>
@@ -1637,7 +1711,7 @@
      <Function FadeIn="0" FadeOut="0" Duration="6">89</Function>
     </SpeedDial>
     <Matrix Caption="RGB" ID="286">
-     <WindowState Visible="False" X="555" Y="460" Width="160" Height="120"/>
+     <WindowState Visible="False" X="495" Y="460" Width="160" Height="120"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1647,9 +1721,10 @@
      </Appearance>
      <Function ID="91" InstantApply="true"/>
      <Visibility>31</Visibility>
+     <Input Universe="0" Channel="32796"/>
     </Matrix>
     <Matrix Caption="Dimmer" ID="287">
-     <WindowState Visible="False" X="555" Y="340" Width="160" Height="120"/>
+     <WindowState Visible="False" X="500" Y="340" Width="160" Height="120"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1659,6 +1734,7 @@
      </Appearance>
      <Function ID="94" InstantApply="true"/>
      <Visibility>7</Visibility>
+     <Input Universe="0" Channel="32795"/>
     </Matrix>
     <SoloFrame Caption="" ID="299" Page="1">
      <Appearance>
@@ -2223,8 +2299,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="0" Channel="32809"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="115">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="17">8</Channel>
        <Channel Fixture="18">8</Channel>
       </Level>
@@ -2241,6 +2318,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="0" Channel="32810"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="17">10</Channel>
@@ -2259,8 +2337,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="0" Channel="32811"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="202">
+      <Level LowLimit="0" HighLimit="255" Value="38">
        <Channel Fixture="17">18</Channel>
        <Channel Fixture="18">18</Channel>
       </Level>
@@ -2277,8 +2356,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="0" Channel="32812"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="192">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="17">19</Channel>
        <Channel Fixture="18">19</Channel>
       </Level>
@@ -2295,8 +2375,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="0" Channel="32813"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="118">
        <Channel Fixture="17">21</Channel>
        <Channel Fixture="18">21</Channel>
       </Level>
@@ -2313,6 +2394,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="0" Channel="32814"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="64" HighLimit="95" Value="74">
        <Channel Fixture="17">26</Channel>
@@ -2331,8 +2413,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="0" Channel="32815"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="164">
        <Channel Fixture="17">23</Channel>
        <Channel Fixture="18">23</Channel>
       </Level>
@@ -2349,8 +2432,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
+      <Input Universe="0" Channel="32816"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="231">
+      <Level LowLimit="0" HighLimit="255" Value="196">
        <Channel Fixture="17">24</Channel>
        <Channel Fixture="18">24</Channel>
       </Level>
@@ -2376,8 +2460,19 @@
       <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
       <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
      </Fixture>
-     <Pan Position="128"/>
-     <Tilt Position="128"/>
+     <Window hMin="0" hMax="255" vMin="0" vMax="255"/>
+     <Pan Position="107">
+      <Input Universe="0" Channel="98325"/>
+     </Pan>
+     <Tilt Position="198">
+      <Input Universe="0" Channel="98327"/>
+     </Tilt>
+     <Width>
+      <Input Universe="0" Channel="98326"/>
+     </Width>
+     <Height>
+      <Input Universe="0" Channel="98328"/>
+     </Height>
      <Preset ID="19">
       <Type>Position</Type>
       <Name>128</Name>
@@ -2409,6 +2504,16 @@
       <Name>pos - publikum</Name>
       <FuncID>109</FuncID>
      </Preset>
+     <Preset ID="26">
+      <Type>FixtureGroup</Type>
+      <Name>Unten</Name>
+      <Fixture ID="17" Head="0"/>
+     </Preset>
+     <Preset ID="27">
+      <Type>FixtureGroup</Type>
+      <Name>Oben</Name>
+      <Fixture ID="18" Head="0"/>
+     </Preset>
     </XYPad>
     <SpeedDial Caption="Duration" ID="339" Page="1">
      <WindowState Visible="False" X="505" Y="335" Width="175" Height="105"/>
@@ -2421,7 +2526,10 @@
      </Appearance>
      <Visibility>65540</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Time>0</Time>
+     <Tap>
+      <Input Universe="0" Channel="98441"/>
+     </Tap>
+     <Time>789</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">99</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">101</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">102</Function>
@@ -3059,9 +3167,9 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Sans Serif,10,-1,5,50,0,0,0,0,0</Font>
       </Appearance>
-      <Input Universe="0" Channel="7"/>
+      <Input Universe="0" Channel="32809"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="14">
        <Channel Fixture="0">2</Channel>
       </Level>
       <Playback>
@@ -3077,7 +3185,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Sans Serif,10,-1,5,50,0,0,0,0,0</Font>
       </Appearance>
-      <Input Universe="0" Channel="4103"/>
+      <Input Universe="0" Channel="32810"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">3</Channel>
@@ -3095,7 +3203,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Sans Serif,10,-1,5,50,0,0,0,0,0</Font>
       </Appearance>
-      <Input Universe="0" Channel="8199"/>
+      <Input Universe="0" Channel="32811"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="204">
        <Channel Fixture="0">4</Channel>
@@ -3113,7 +3221,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Sans Serif,10,-1,5,50,0,0,0,0,0</Font>
       </Appearance>
-      <Input Universe="0" Channel="12295"/>
+      <Input Universe="0" Channel="32812"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="180">
        <Channel Fixture="0">5</Channel>
@@ -3131,7 +3239,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Sans Serif,10,-1,5,50,0,0,0,0,0</Font>
       </Appearance>
-      <Input Universe="0" Channel="16391"/>
+      <Input Universe="0" Channel="32813"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="158">
        <Channel Fixture="0">6</Channel>
@@ -3149,7 +3257,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Sans Serif,10,-1,5,50,0,0,0,0,0</Font>
       </Appearance>
-      <Input Universe="0" Channel="20487"/>
+      <Input Universe="0" Channel="32814"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="152">
        <Channel Fixture="0">7</Channel>
@@ -3167,7 +3275,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Sans Serif,10,-1,5,50,0,0,0,0,0</Font>
       </Appearance>
-      <Input Universe="0" Channel="24583"/>
+      <Input Universe="0" Channel="32815"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">8</Channel>
@@ -3191,7 +3299,7 @@
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
-   <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
   </Properties>
  </VirtualConsole>
  <SimpleDesk>
