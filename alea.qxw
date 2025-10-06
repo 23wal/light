@@ -390,43 +390,47 @@
   </Fixture>
   <FixtureGroup ID="0">
    <Name>allPars</Name>
-   <Size X="3" Y="20"/>
-   <Head X="0" Y="0" Fixture="0">0</Head>
-   <Head X="1" Y="0" Fixture="6">0</Head>
-   <Head X="2" Y="0" Fixture="3">0</Head>
-   <Head X="0" Y="1" Fixture="1">0</Head>
-   <Head X="1" Y="1" Fixture="7">0</Head>
-   <Head X="2" Y="1" Fixture="4">0</Head>
-   <Head X="0" Y="2" Fixture="2">0</Head>
-   <Head X="1" Y="2" Fixture="8">0</Head>
-   <Head X="2" Y="2" Fixture="5">0</Head>
+   <Size X="6" Y="20"/>
+   <Head X="0" Y="0" Fixture="6">0</Head>
+   <Head X="2" Y="0" Fixture="0">0</Head>
+   <Head X="5" Y="0" Fixture="7">0</Head>
+   <Head X="0" Y="1" Fixture="8">0</Head>
+   <Head X="5" Y="1" Fixture="10">0</Head>
+   <Head X="0" Y="2" Fixture="9">0</Head>
+   <Head X="5" Y="2" Fixture="11">0</Head>
    <Head X="0" Y="3" Fixture="19">0</Head>
-   <Head X="1" Y="3" Fixture="9">0</Head>
-   <Head X="2" Y="3" Fixture="23">0</Head>
+   <Head X="1" Y="3" Fixture="12">0</Head>
+   <Head X="3" Y="3" Fixture="1">0</Head>
+   <Head X="4" Y="3" Fixture="13">0</Head>
+   <Head X="5" Y="3" Fixture="23">0</Head>
    <Head X="0" Y="4" Fixture="20">0</Head>
-   <Head X="1" Y="4" Fixture="10">0</Head>
-   <Head X="2" Y="4" Fixture="24">0</Head>
+   <Head X="5" Y="4" Fixture="24">0</Head>
    <Head X="0" Y="5" Fixture="21">0</Head>
-   <Head X="1" Y="5" Fixture="11">0</Head>
-   <Head X="2" Y="5" Fixture="25">0</Head>
+   <Head X="5" Y="5" Fixture="25">0</Head>
    <Head X="0" Y="6" Fixture="22">0</Head>
-   <Head X="2" Y="6" Fixture="26">0</Head>
+   <Head X="2" Y="6" Fixture="2">0</Head>
+   <Head X="5" Y="6" Fixture="26">0</Head>
    <Head X="0" Y="7" Fixture="31">0</Head>
-   <Head X="2" Y="7" Fixture="33">0</Head>
+   <Head X="5" Y="7" Fixture="33">0</Head>
    <Head X="0" Y="8" Fixture="31">1</Head>
-   <Head X="2" Y="8" Fixture="33">1</Head>
+   <Head X="5" Y="8" Fixture="33">1</Head>
    <Head X="0" Y="9" Fixture="31">2</Head>
-   <Head X="2" Y="9" Fixture="33">2</Head>
+   <Head X="3" Y="9" Fixture="3">0</Head>
+   <Head X="5" Y="9" Fixture="33">2</Head>
    <Head X="0" Y="10" Fixture="31">3</Head>
-   <Head X="2" Y="10" Fixture="33">3</Head>
+   <Head X="1" Y="10" Fixture="14">0</Head>
+   <Head X="4" Y="10" Fixture="15">0</Head>
+   <Head X="5" Y="10" Fixture="33">3</Head>
    <Head X="0" Y="11" Fixture="32">0</Head>
-   <Head X="2" Y="11" Fixture="34">0</Head>
+   <Head X="5" Y="11" Fixture="34">0</Head>
    <Head X="0" Y="12" Fixture="32">1</Head>
-   <Head X="2" Y="12" Fixture="34">1</Head>
+   <Head X="5" Y="12" Fixture="34">1</Head>
    <Head X="0" Y="13" Fixture="32">2</Head>
-   <Head X="2" Y="13" Fixture="34">2</Head>
+   <Head X="2" Y="13" Fixture="4">0</Head>
+   <Head X="5" Y="13" Fixture="34">2</Head>
    <Head X="0" Y="14" Fixture="32">3</Head>
-   <Head X="2" Y="14" Fixture="34">3</Head>
+   <Head X="5" Y="14" Fixture="34">3</Head>
+   <Head X="3" Y="16" Fixture="5">0</Head>
   </FixtureGroup>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
