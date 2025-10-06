@@ -28,11 +28,17 @@ jobs:
 
       - name: Build PlatformIO Project
         run: cd dmx2vga && pio run
-  ibom:
+  svg:
     runs-on: ubuntu-latest
     env:
+      PREFIX: "dmx2vga"
       PCBPATH: "dmx2vga/kicad/dmx2vga.kicad_pcb"
       ARGS: "--layer-view F"
+
+      # schematic
+      SCHEMATICPATH: "dmx2vga/kicad/dmx2vga.kicad_sch"
+      OUTPUT: "dmx2vga.svg"
+      TYPE: "schematic_svg"
     container:
       image: docker.io/kicad/kicad:9.0
       options: --user root
@@ -49,24 +55,13 @@ jobs:
       - name: Generate Interactive BOM
         run: |
           mkdir public
-          xvfb-run python3 InteractiveHtmlBom/InteractiveHtmlBom/generate_interactive_bom.py --no-browser $ARGS $PCBPATH --dest-dir "$(pwd)/public"
+          xvfb-run python3 InteractiveHtmlBom/InteractiveHtmlBom/generate_interactive_bom.py --no-browser $ARGS $PCBPATH --dest-dir "$(pwd)/$PREFIX"
 
       - uses: actions/upload-artifact@v4
         with:
-          name: ibom
-          path: public
+          name: "${{ env.PREFIX }}-ibom"
+          path: "${{ env.PREFIX }}"
 
-  schematic:
-    runs-on: ubuntu-latest
-    env:
-      SCHEMATICPATH: "dmx2vga/kicad/dmx2vga.kicad_sch"
-      TYPE: "schematic_svg"
-    container:
-      image: docker.io/kicad/kicad:9.0
-      options: --user root
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
       - run: |
           apt update -qq
           apt install -y curl
@@ -76,13 +71,12 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: schematic
-          path: ./dmx2vga.svg
+          name: "${{ env.PREFIX }}-schematic"
+          path: "${{ env.OUTPUT}}"
 
   jekyll:
     needs:
-      - ibom
-      - schematic
+      - svg
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -97,12 +91,12 @@ jobs:
       - name: Download ibom artifact
         uses: actions/download-artifact@v4
         with:
-          name: ibom
+          name: dmx2vga-ibom
 
       - name: Download schematic artifact
         uses: actions/download-artifact@v4
         with:
-          name: schematic
+          name: dmx2vga-schematic
 
       - name: Move downloaded files to _site/
         run: |
