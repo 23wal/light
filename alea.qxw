@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author></Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Input Plugin="MIDI" UID="input" Line="1" Profile="Akai APC20"/>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Feedback Plugin="MIDI" UID="input" Line="1"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>0</ID>
+   <Name>Fallout 15° #1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>1</ID>
+   <Name>Fallout 15° #2</Name>
+   <Universe>0</Universe>
+   <Address>4</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>2</ID>
+   <Name>Fallout 15° #3</Name>
+   <Universe>0</Universe>
+   <Address>8</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>3</ID>
+   <Name>Fallout 15° #4</Name>
+   <Universe>0</Universe>
+   <Address>12</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>4</ID>
+   <Name>Fallout 15° #5</Name>
+   <Universe>0</Universe>
+   <Address>16</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>5</ID>
+   <Name>Fallout 15° #6</Name>
+   <Universe>0</Universe>
+   <Address>20</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>6</ID>
+   <Name>Fallout 40° #1</Name>
+   <Universe>0</Universe>
+   <Address>24</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>7</ID>
+   <Name>Fallout 40° #2</Name>
+   <Universe>0</Universe>
+   <Address>28</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>hyulights</Manufacturer>
+   <Model>hyu-7</Model>
+   <Mode>6 Channel</Mode>
+   <ID>8</ID>
+   <Name>lukn led par #1</Name>
+   <Universe>0</Universe>
+   <Address>32</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>hyulights</Manufacturer>
+   <Model>hyu-7</Model>
+   <Mode>6 Channel</Mode>
+   <ID>9</ID>
+   <Name>lukn led par #2</Name>
+   <Universe>0</Universe>
+   <Address>38</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>hyulights</Manufacturer>
+   <Model>hyu-7</Model>
+   <Mode>6 Channel</Mode>
+   <ID>10</ID>
+   <Name>lukn led par #3</Name>
+   <Universe>0</Universe>
+   <Address>44</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>hyulights</Manufacturer>
+   <Model>hyu-7</Model>
+   <Mode>6 Channel</Mode>
+   <ID>11</ID>
+   <Name>lukn led par #4</Name>
+   <Universe>0</Universe>
+   <Address>50</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Shehds</Manufacturer>
+   <Model>LED Spot 60W</Model>
+   <Mode>11-channel</Mode>
+   <ID>12</ID>
+   <Name>LED Spot 60W #1</Name>
+   <Universe>0</Universe>
+   <Address>152</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Shehds</Manufacturer>
+   <Model>LED Spot 60W</Model>
+   <Mode>11-channel</Mode>
+   <ID>13</ID>
+   <Name>LED Spot 60W #2</Name>
+   <Universe>0</Universe>
+   <Address>163</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Shehds</Manufacturer>
+   <Model>LED Spot 60W</Model>
+   <Mode>11-channel</Mode>
+   <ID>14</ID>
+   <Name>LED Spot 60W #3</Name>
+   <Universe>0</Universe>
+   <Address>174</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Shehds</Manufacturer>
+   <Model>LED Spot 60W</Model>
+   <Mode>11-channel</Mode>
+   <ID>15</ID>
+   <Name>LED Spot 60W #4</Name>
+   <Universe>0</Universe>
+   <Address>185</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>16</ID>
+   <Name>Nebel</Name>
+   <Universe>0</Universe>
+   <Address>419</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>19</ID>
+   <Name>nitro led par #1</Name>
+   <Universe>0</Universe>
+   <Address>56</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>20</ID>
+   <Name>nitro led par #2</Name>
+   <Universe>0</Universe>
+   <Address>60</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>21</ID>
+   <Name>nitro led par #3</Name>
+   <Universe>0</Universe>
+   <Address>64</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>22</ID>
+   <Name>nitro led par #4</Name>
+   <Universe>0</Universe>
+   <Address>68</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>23</ID>
+   <Name>nitro led par #5</Name>
+   <Universe>0</Universe>
+   <Address>72</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>24</ID>
+   <Name>nitro led par #6</Name>
+   <Universe>0</Universe>
+   <Address>76</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>25</ID>
+   <Name>nitro led par #7</Name>
+   <Universe>0</Universe>
+   <Address>80</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGBW</Model>
+   <Mode>RGBW</Mode>
+   <ID>26</ID>
+   <Name>nitro led par #8</Name>
+   <Universe>0</Universe>
+   <Address>84</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>UKing</Manufacturer>
+   <Model>LED Strobe</Model>
+   <Mode>6</Mode>
+   <ID>27</ID>
+   <Name>lukn led strobe #1</Name>
+   <Universe>0</Universe>
+   <Address>88</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>UKing</Manufacturer>
+   <Model>LED Strobe</Model>
+   <Mode>6</Mode>
+   <ID>28</ID>
+   <Name>lukn led strobe #2</Name>
+   <Universe>0</Universe>
+   <Address>94</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>UKing</Manufacturer>
+   <Model>LED Strobe</Model>
+   <Mode>6</Mode>
+   <ID>29</ID>
+   <Name>lukn led strobe #3</Name>
+   <Universe>0</Universe>
+   <Address>100</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>UKing</Manufacturer>
+   <Model>LED Strobe</Model>
+   <Mode>6</Mode>
+   <ID>30</ID>
+   <Name>lukn led strobe #4</Name>
+   <Universe>0</Universe>
+   <Address>106</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>31</ID>
+   <Name>lukn dimmer #1</Name>
+   <Universe>0</Universe>
+   <Address>112</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>32</ID>
+   <Name>lukn dimmer #2</Name>
+   <Universe>0</Universe>
+   <Address>116</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>33</ID>
+   <Name>nitro dimmer #1</Name>
+   <Universe>0</Universe>
+   <Address>120</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>34</ID>
+   <Name>nitro dimmer #2</Name>
+   <Universe>0</Universe>
+   <Address>124</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>JB Systems</Manufacturer>
+   <Model>Dynamo 250</Model>
+   <Mode>4 Channel</Mode>
+   <ID>35</ID>
+   <Name>nitro dynamo #1</Name>
+   <Universe>0</Universe>
+   <Address>128</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>JB Systems</Manufacturer>
+   <Model>Dynamo 250</Model>
+   <Mode>4 Channel</Mode>
+   <ID>36</ID>
+   <Name>nitro dynamo #2</Name>
+   <Universe>0</Universe>
+   <Address>132</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Stairville</Manufacturer>
+   <Model>JunoScan MKII</Model>
+   <Mode>8 Channel</Mode>
+   <ID>37</ID>
+   <Name>nitro JunoScan MKII #1</Name>
+   <Universe>0</Universe>
+   <Address>136</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Stairville</Manufacturer>
+   <Model>JunoScan MKII</Model>
+   <Mode>8 Channel</Mode>
+   <ID>38</ID>
+   <Name>nitro JunoScan MKII #2</Name>
+   <Universe>0</Universe>
+   <Address>144</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Monitor DisplayMode="1" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
