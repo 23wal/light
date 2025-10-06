@@ -19,13 +19,14 @@ Docs about our Light-Setup
 |                                    |          | 3: 116-128    |                                                                                                                            |
 |                                    |          | 4: 129-141    |                                                                                                                            |
 | Aliexpress PAR                     | 4        | 1: 040-049    | [aliexpress](https://www.aliexpress.com/item/1005004430211428.html?spm=a2g0o.order_list.order_list_main.22.224c5c5fDzbOLc) |
-|                                    |          | 2: 050-059    |                                                                                                                            |
+|                                    |          | 2: 050-059    | [manual](https://forums.pioneerdj.com/hc/user_images/mqaxf0DW1cDbQthUUF3sag.jpeg)                                          |
 |                                    |          | 3: 060-069    |                                                                                                                            |
 |                                    |          | 4: 070-079    |                                                                                                                            |
 | Eurolite LED THM-46                | 2        | 1: 001-018    | [thomann](https://www.thomann.de/de/eurolite_led_tmh_46_moving_head_wash.htm)                                              |
 |                                    |          | 2: 019-036    |                                                                                                                            |
 | Cameo Wookie series 400RGB         | 1        | 1: 501-509    |                                                                                                                            |
 | Stairville AF-150                  | 1        | 1: 420        |                                                                                                                            |
+| UKING ZQ06121 RETRO LIGHT          | 4        |               | [manual](https://www.uking-online.com/wp-content/uploads/2025/07/ZQ06121.pdf)
 
 ## Hardware
 
