@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
@@ -430,8 +430,16 @@
    <Head X="0" Y="7" Fixture="27">2</Head>
    <Head X="1" Y="7" Fixture="27">3</Head>
   </FixtureGroup>
+  <FixtureGroup ID="2">
+   <Name>MHs</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="28">0</Head>
+   <Head X="1" Y="0" Fixture="29">0</Head>
+   <Head X="0" Y="1" Fixture="30">0</Head>
+   <Head X="1" Y="1" Fixture="31">0</Head>
+  </FixtureGroup>
   <Function ID="0" Type="RGBMatrix" Name="LED - Random pixels RED" Path="LED">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Random Pixel Per Row</Algorithm>
@@ -440,7 +448,7 @@
    <FixtureGroup>0</FixtureGroup>
   </Function>
   <Function ID="1" Type="RGBMatrix" Name="LED - hinten &gt; vorne RED" Path="LED">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes</Algorithm>
@@ -453,15 +461,18 @@
    <Speed FadeIn="0" FadeOut="0" Duration="300000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">0</Step>
-   <Step Number="1" FadeIn="0" Hold="300000" FadeOut="0">12</Step>
-   <Step Number="2" FadeIn="0" Hold="300000" FadeOut="0">11</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">1</Step>
-   <Step Number="4" FadeIn="0" Hold="300000" FadeOut="0">3</Step>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="300000" FadeOut="0">0</Step>
+   <Step Number="1" FadeIn="0" Hold="23000" FadeOut="0">42</Step>
+   <Step Number="2" FadeIn="0" Hold="300000" FadeOut="0">12</Step>
+   <Step Number="3" FadeIn="0" Hold="23000" FadeOut="0">42</Step>
+   <Step Number="4" FadeIn="0" Hold="300000" FadeOut="0">11</Step>
+   <Step Number="5" FadeIn="0" Hold="300000" FadeOut="0">1</Step>
+   <Step Number="6" FadeIn="0" Hold="300000" FadeOut="0">3</Step>
+   <Step Number="7" FadeIn="0" Hold="23000" FadeOut="0">42</Step>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="LED - random column RED/Orange" Path="LED">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Random Column</Algorithm>
@@ -684,7 +695,7 @@
    <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">6</Step>
   </Function>
   <Function ID="9" Type="RGBMatrix" Name="Dimmers - One by One" Path="Dimmers">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">One By One</Algorithm>
@@ -693,7 +704,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="10" Type="RGBMatrix" Name="Dimmers - Random Fill" Path="Dimmers">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Random Fill Single</Algorithm>
@@ -702,7 +713,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="11" Type="RGBMatrix" Name="LED - Random pixels Purple" Path="LED">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Random Pixel Per Row</Algorithm>
@@ -711,7 +722,7 @@
    <FixtureGroup>0</FixtureGroup>
   </Function>
   <Function ID="12" Type="RGBMatrix" Name="LED - Random pixels Purple/Orange" Path="LED">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Random Single</Algorithm>
@@ -720,8 +731,22 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
   </Function>
+  <Function ID="13" Type="Chaser" Name="MH-Color">
+   <Speed FadeIn="0" FadeOut="0" Duration="300000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">23</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">21</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">18</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">20</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">24</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">27</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">26</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">30</Step>
+  </Function>
   <Function ID="14" Type="RGBMatrix" Name="Dimmers - Random Single" Path="Dimmers">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Random Single</Algorithm>
@@ -730,7 +755,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="15" Type="RGBMatrix" Name="Dimmers - Noise Low" Path="Dimmers">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
@@ -740,7 +765,7 @@
    <Property Name="noisePercentage" Value="Low"/>
   </Function>
   <Function ID="16" Type="RGBMatrix" Name="Dimmers - Noise Medium" Path="Dimmers">
-   <Speed FadeIn="0" FadeOut="0" Duration="523"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Noise</Algorithm>
@@ -865,26 +890,148 @@
    <FixtureVal ID="31">2,197</FixtureVal>
    <FixtureVal ID="30">2,197</FixtureVal>
   </Function>
-  <Function ID="33" Type="Chaser" Name="Colour macros chaser - LED Spot 60W">
-   <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
+  <Function ID="33" Type="RGBMatrix" Name="MH - Vorn/Hinten" Path="MHs">
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">18</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">19</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">20</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">21</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">22</Step>
-   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">23</Step>
-   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">24</Step>
-   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">25</Step>
-   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">26</Step>
-   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">27</Step>
-   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">28</Step>
-   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">29</Step>
-   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">30</Step>
-   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">31</Step>
-   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">32</Step>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+   <Property Name="orientation" Value="Vertical"/>
+  </Function>
+  <Function ID="34" Type="RGBMatrix" Name="MH - Links/Rechts" Path="MHs">
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+  </Function>
+  <Function ID="35" Type="RGBMatrix" Name="MH - Random Single" Path="MHs">
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Random Single</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+  </Function>
+  <Function ID="36" Type="RGBMatrix" Name="MH - Fill Unfill Vorn/Hinten" Path="MHs">
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Fill Unfill</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+   <Property Name="orientation" Value="Vertical"/>
+  </Function>
+  <Function ID="37" Type="RGBMatrix" Name="MH - Fill Unfill Links/Rechts" Path="MHs">
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Fill Unfill</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+  </Function>
+  <Function ID="38" Type="RGBMatrix" Name="MH - Noise Medium" Path="MHs">
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Noise</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+   <Property Name="noisePercentage" Value="Medium"/>
+  </Function>
+  <Function ID="39" Type="RGBMatrix" Name="MH - Noise Low" Path="MHs">
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Noise</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+   <Property Name="noisePercentage" Value="Low"/>
+  </Function>
+  <Function ID="40" Type="RGBMatrix" Name="MH - Noise High" Path="MHs">
+   <Speed FadeIn="0" FadeOut="0" Duration="342"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Noise</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>Dimmer</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+   <Property Name="noisePercentage" Value="High"/>
+  </Function>
+  <Function ID="41" Type="Chaser" Name="MH-Dimmer">
+   <Speed FadeIn="0" FadeOut="0" Duration="300000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">37</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">38</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">36</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">34</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">40</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">35</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">33</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">39</Step>
+  </Function>
+  <Function ID="42" Type="Scene" Name="LED Par - Aus">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="12">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="15">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="19">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0,3,0,4,0,5,0</FixtureVal>
+  </Function>
+  <Function ID="43" Type="Scene" Name="LED Strobe - Aus ">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="20">0,0</FixtureVal>
+   <FixtureVal ID="21">0,0</FixtureVal>
+   <FixtureVal ID="22">0,0</FixtureVal>
+   <FixtureVal ID="23">0,0</FixtureVal>
+  </Function>
+  <Function ID="44" Type="Scene" Name="Dimmer - Aus">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="24">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="25">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="26">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="27">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="45" Type="Scene" Name="MH - Aus">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="28">5,0</FixtureVal>
+   <FixtureVal ID="29">5,0</FixtureVal>
+   <FixtureVal ID="30">5,0</FixtureVal>
+   <FixtureVal ID="31">5,0</FixtureVal>
+  </Function>
+  <Function ID="46" Type="Collection" Name="All Chasers">
+   <Step Number="0">17</Step>
+   <Step Number="1">2</Step>
+   <Step Number="2">13</Step>
+   <Step Number="3">41</Step>
+   <Step Number="4">8</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -935,7 +1082,7 @@
     <Font>Default</Font>
    </Appearance>
    <SpeedDial Caption="Dauer" ID="0">
-    <WindowState Visible="True" X="1020" Y="755" Width="290" Height="245"/>
+    <WindowState Visible="False" X="0" Y="365" Width="290" Height="245"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -945,7 +1092,15 @@
     </Appearance>
     <Visibility>65663</Visibility>
     <AbsoluteValue Minimum="0" Maximum="10000"/>
-    <Time>523</Time>
+    <Time>342</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">33</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">35</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">38</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">39</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">40</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">34</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">36</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">37</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">0</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">12</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">11</Function>
@@ -958,7 +1113,7 @@
     <Function FadeIn="0" FadeOut="0" Duration="6">15</Function>
    </SpeedDial>
    <CueList Caption="LED" ID="2">
-    <WindowState Visible="True" X="0" Y="0" Width="450" Height="300"/>
+    <WindowState Visible="False" X="0" Y="60" Width="370" Height="300"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -974,7 +1129,7 @@
     <Stop/>
    </CueList>
    <CueList Caption="MH" ID="1">
-    <WindowState Visible="True" X="450" Y="0" Width="370" Height="300"/>
+    <WindowState Visible="False" X="740" Y="60" Width="370" Height="300"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -990,7 +1145,7 @@
     <Stop/>
    </CueList>
    <CueList Caption="Cue list" ID="3">
-    <WindowState Visible="True" X="820" Y="0" Width="370" Height="300"/>
+    <WindowState Visible="False" X="370" Y="60" Width="370" Height="300"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1013,7 +1168,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="350" Width="410" Height="265"/>
+    <WindowState Visible="False" X="300" Y="375" Width="410" Height="265"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1029,7 +1184,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="0" Y="40" Width="395" Height="225"/>
+     <WindowState Visible="False" X="0" Y="40" Width="395" Height="225"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1037,7 +1192,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="Blue" ID="76" Icon="">
-      <WindowState Visible="True" X="0" Y="0" Width="75" Height="75"/>
+      <WindowState Visible="False" X="0" Y="0" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1050,7 +1205,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Color wheel rotation CW slow…fast" ID="77" Icon="">
-      <WindowState Visible="True" X="75" Y="0" Width="75" Height="75"/>
+      <WindowState Visible="False" X="75" Y="0" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1063,7 +1218,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Green" ID="78" Icon="">
-      <WindowState Visible="True" X="150" Y="0" Width="75" Height="75"/>
+      <WindowState Visible="False" X="150" Y="0" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1076,7 +1231,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Lemon Yellow" ID="79" Icon="">
-      <WindowState Visible="True" X="225" Y="0" Width="75" Height="75"/>
+      <WindowState Visible="False" X="225" Y="0" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1089,7 +1244,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Open" ID="80" Icon="">
-      <WindowState Visible="True" X="300" Y="0" Width="75" Height="75"/>
+      <WindowState Visible="False" X="300" Y="0" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1102,7 +1257,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Orange" ID="81" Icon="">
-      <WindowState Visible="True" X="0" Y="75" Width="75" Height="75"/>
+      <WindowState Visible="False" X="0" Y="75" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1115,7 +1270,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Pink" ID="82" Icon="">
-      <WindowState Visible="True" X="75" Y="75" Width="75" Height="75"/>
+      <WindowState Visible="False" X="75" Y="75" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1128,7 +1283,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Red" ID="83" Icon="">
-      <WindowState Visible="True" X="150" Y="75" Width="75" Height="75"/>
+      <WindowState Visible="False" X="150" Y="75" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1141,7 +1296,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Sky Blue" ID="84" Icon="">
-      <WindowState Visible="True" X="225" Y="75" Width="75" Height="75"/>
+      <WindowState Visible="False" X="225" Y="75" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1154,7 +1309,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Split Blue / Pink" ID="85" Icon="">
-      <WindowState Visible="True" X="300" Y="75" Width="75" Height="75"/>
+      <WindowState Visible="False" X="300" Y="75" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1167,7 +1322,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Split Green / Blue" ID="86" Icon="">
-      <WindowState Visible="True" X="0" Y="150" Width="75" Height="75"/>
+      <WindowState Visible="False" X="0" Y="150" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1180,7 +1335,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Split Lemon Yellow / Green" ID="87" Icon="">
-      <WindowState Visible="True" X="75" Y="150" Width="75" Height="75"/>
+      <WindowState Visible="False" X="75" Y="150" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1193,7 +1348,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Split Orange / Lemon Yellow" ID="88" Icon="">
-      <WindowState Visible="True" X="150" Y="150" Width="75" Height="75"/>
+      <WindowState Visible="False" X="150" Y="150" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1206,7 +1361,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Split Pink / Sky Blue" ID="89" Icon="">
-      <WindowState Visible="True" X="225" Y="150" Width="75" Height="75"/>
+      <WindowState Visible="False" X="225" Y="150" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1219,7 +1374,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Split Red / Orange" ID="90" Icon="">
-      <WindowState Visible="True" X="300" Y="150" Width="75" Height="75"/>
+      <WindowState Visible="False" X="300" Y="150" Width="75" Height="75"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1233,6 +1388,101 @@
      </Button>
     </Frame>
    </SoloFrame>
+   <CueList Caption="Cue list" ID="5">
+    <WindowState Visible="False" X="1110" Y="60" Width="370" Height="300"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>13</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next/>
+    <Previous/>
+    <Playback/>
+    <Stop/>
+   </CueList>
+   <Label Caption="MH-Movement" ID="7">
+    <WindowState Visible="False" X="740" Y="0" Width="370" Height="60"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Sans Serif,24,-1,5,50,0,0,0,0,0</Font>
+    </Appearance>
+   </Label>
+   <Label Caption="Pin Spots" ID="8">
+    <WindowState Visible="False" X="370" Y="0" Width="370" Height="60"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Sans Serif,24,-1,5,50,0,0,0,0,0</Font>
+    </Appearance>
+   </Label>
+   <Label Caption="MH-Color" ID="9">
+    <WindowState Visible="False" X="1110" Y="0" Width="370" Height="60"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Sans Serif,24,-1,5,50,0,0,0,0,0</Font>
+    </Appearance>
+   </Label>
+   <Label Caption="LED-Pars" ID="10">
+    <WindowState Visible="False" X="0" Y="0" Width="370" Height="60"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Sans Serif,24,-1,5,50,0,0,0,0,0</Font>
+    </Appearance>
+   </Label>
+   <CueList Caption="MH - Dimmer" ID="6">
+    <WindowState Visible="False" X="1480" Y="60" Width="370" Height="300"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>41</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next/>
+    <Previous/>
+    <Playback/>
+    <Stop/>
+   </CueList>
+   <Label Caption="MH-Dimmer" ID="15">
+    <WindowState Visible="False" X="1480" Y="0" Width="370" Height="60"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Sans Serif,24,-1,5,50,0,0,0,0,0</Font>
+    </Appearance>
+   </Label>
+   <Button Caption="All Chasers" ID="16" Icon="">
+    <WindowState Visible="False" X="975" Y="495" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="46"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
